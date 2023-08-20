@@ -1,12 +1,7 @@
-import './App.css';
-
-function App() {
-  return (
-    <>
-      <div>Hello World</div>
-      <div>Welcome to my website</div>
-    </>
+const App: React.FC = () => {
+  return(
+      <>Hello World !!</>
   );
-}
+};
 
 export default App;
