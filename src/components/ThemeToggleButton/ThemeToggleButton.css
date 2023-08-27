@@ -1,0 +1,25 @@
+
+.toggle-group {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .toggle-group .icon {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .MuiToggleButton-root.small-button {
+    border-radius: 16px; /* Adjust the corner radius as needed */
+    padding: 4px; /* Adjust the padding as needed */
+    width: 40px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+  }
+  
+  .MuiToggleButton-root.small-button .MuiSvgIcon-root {
+    font-size: 12px; /* Adjust the icon size as needed */
+  }
+  
+  .active {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+  }
+  
