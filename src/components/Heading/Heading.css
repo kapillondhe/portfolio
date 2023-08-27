@@ -1,0 +1,11 @@
+.headingContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Aligns content to the right */
+    align-items: center; /* Centers content vertically */
+    padding: 0 8px; /* Add some padding to create space */
+}
+
+.toggleButton{
+    margin-left: 32px;    
+}

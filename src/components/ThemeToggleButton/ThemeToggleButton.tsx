@@ -11,10 +11,7 @@ interface ThemeToggleButtonProps {
   toggleTheme: () => void;
 }
 
-const ThemeToggleButton: React.FC<ThemeToggleButtonProps> = ({
-  themeMode,
-  toggleTheme,
-}) => {
+const ThemeToggleButton: React.FC<ThemeToggleButtonProps> = ({ themeMode, toggleTheme,}) => {
   return (
     <ToggleButtonGroup
       value={themeMode}

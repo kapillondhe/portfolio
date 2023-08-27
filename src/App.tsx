@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import {
-  ThemeProvider,
-  CssBaseline,
-  createTheme,
-} from '@mui/material';
-
+import { ThemeProvider, CssBaseline, createTheme} from '@mui/material';
 import Heading from './components/Heading/Heading';
 import Body from './components/Body/Body';
-import ThemeToggleButton from './components/ThemeToggleButton/ThemeToggleButton';
 import './App.css'
+
+const primaryLightColor = '#4CAF50'; // Green
+const secondaryLightColor = '#FFC107'; // Light Orange (Amber)
+const primaryDarkColor = '#1976D2'; // Blue
+const secondaryDarkColor = '#FFEB3B'; // Yellow
 
 const App: React.FC = () => {
   const [themeMode, setThemeMode] = useState<'light' | 'dark'>('light'); // 'light' or 'dark'
@@ -20,6 +19,12 @@ const App: React.FC = () => {
   const theme = createTheme({
     palette: {
       mode: themeMode,
+      primary: {
+        main: themeMode === 'light' ? primaryLightColor : primaryDarkColor,
+      },
+      secondary: {
+        main: themeMode === 'light' ? secondaryLightColor : secondaryDarkColor,
+      },
     },
   });
 
@@ -27,12 +32,8 @@ const App: React.FC = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="App">
-        <div className="container">
-          <div className='toggleButton'>
-            <ThemeToggleButton themeMode={themeMode} toggleTheme={toggleTheme}  />
-          </div>
-          
-          <Heading/>
+        <div className="container">          
+          <Heading themeMode={themeMode} toggleTheme={toggleTheme}/>
           <Body/>
         </div>
       </div>

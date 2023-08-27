@@ -5,12 +5,7 @@ const Body: React.FC =()=>{
     return(
         <div className='container'>
             <div className="typewriter">
-                <p>
-                    Hello !!
-                </p>
-                <p>
-                    I am Kapil Londhe
-                </p>
+
             </div>
         </div>
     )
