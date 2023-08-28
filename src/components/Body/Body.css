@@ -1,15 +1,10 @@
-.contactsContainer{
-    margin-top: 50px;
+.bodyContainer{
     display: grid;
     place-items: center;
     height: 100vh; /* Make the container fill the entire viewport height */
+    margin-top: 50px;
 }
 
 .typewriter{
     text-align: center;
-}
-
-.contacts{
-    display: flex;
-    flex-direction: row;
 }

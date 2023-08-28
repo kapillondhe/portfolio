@@ -10,7 +10,6 @@ interface HeadingProps {
   }
 
 const Heading : React.FC<HeadingProps>= ({ themeMode, toggleTheme,})=>{
-
     return(
         <div className='heading'>
             <AppBar position='fixed' color="secondary"  sx={{ boxShadow: 1, zIndex: 10 }}>
