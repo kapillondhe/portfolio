@@ -1,13 +1,12 @@
-import './Body.css'
-import GitHubIcon from '@mui/icons-material/GitHub';
-
-const Body: React.FC =()=>{
+import ExperienceTimeline from "../Timeline/Timeline";
+import Contacts from "../Contacts/Contact";
+const Body =()=>{
     return(
-        <div className='container'>
-            <div className="typewriter">
-
-            </div>
+        <div>
+            <Contacts/>
+            <ExperienceTimeline/>
         </div>
+
     )
 }
 

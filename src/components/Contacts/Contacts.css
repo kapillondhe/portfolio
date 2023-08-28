@@ -1,0 +1,19 @@
+.contactsContainer{
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+    height: 100vh; /* Make the container fill the entire viewport height */
+}
+
+.typewriter{
+    text-align: center;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+}
+
+.MuiToggleButton-root.small-button .MuiSvgIcon-root {
+    font-size: 12px; /* Adjust the icon size as needed */
+  }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ThemeProvider, CssBaseline, createTheme} from '@mui/material';
 import Heading from './components/Heading/Heading';
+import Contacts from './components/Contacts/Contact';
 import Body from './components/Body/Body';
 import './App.css'
 
@@ -32,9 +33,13 @@ const App: React.FC = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="App">
-        <div className="container">          
-          <Heading themeMode={themeMode} toggleTheme={toggleTheme}/>
-          <Body/>
+        <div className="appContainer">
+          <div className='appHeading'>
+            <Heading themeMode={themeMode} toggleTheme={toggleTheme}/>
+          </div>          
+          <div className='appBody'>
+            <Body/>
+          </div>
         </div>
       </div>
     </ThemeProvider>

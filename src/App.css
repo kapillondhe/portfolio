@@ -1,5 +1,8 @@
-.container{
+.appContainer{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.appBody{
+  margin-top: 50px;
 }

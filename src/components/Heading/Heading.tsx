@@ -13,15 +13,15 @@ const Heading : React.FC<HeadingProps>= ({ themeMode, toggleTheme,})=>{
 
     return(
         <div className='heading'>
-            <AppBar position='fixed' sx={{ background: 'transparent',boxShadow: 0 }}>
+            <AppBar position='fixed' color="secondary"  sx={{ boxShadow: 1, zIndex: 10 }}>
                 <div className='headingContainer'>
                     <div className='linkButtons'>
                         <Stack spacing={2} direction="row">
-                            <Button variant="text">Home</Button>
-                            <Button variant="text">About</Button>
-                            <Button variant="text">Experience</Button>
-                            <Button variant="text">Skills</Button>
-                            <Button variant="text">Projects</Button>
+                            <Button variant="text" style={{ textTransform: 'none' }}>Home</Button>
+                            <Button variant="text" style={{ textTransform: 'none' }}>About</Button>
+                            <Button variant="text" style={{ textTransform: 'none' }}>Experience</Button>
+                            <Button variant="text" style={{ textTransform: 'none' }}>Skills</Button>
+                            <Button variant="text" style={{ textTransform: 'none' }}>Projects</Button>
                         </Stack>
                     </div>
                     <div className='toggleButton'>
