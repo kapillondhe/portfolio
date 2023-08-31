@@ -19,6 +19,7 @@ import ThemeToggleButton from '../ThemeToggleButton/ThemeToggleButton';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import './Heading.css'
+import { green } from '@mui/material/colors';
 interface HeadingProps {
     themeMode: 'light' | 'dark';
     toggleTheme: () => void;
@@ -51,11 +52,11 @@ const Heading : React.FC<HeadingProps>= ({ themeMode, toggleTheme,})=>{
     return(
         <div className='heading'>
             <AppBar position='static' color="secondary"  sx={{ boxShadow: 1, zIndex: 10 }}>
-                <Container maxWidth="xl">
+                <Container maxWidth="xl" sx={{display:'flex'}}>
                     <div className='headingContainer'>
                         <div className='linkButtons'>
-                            <Toolbar disableGutters>
-                                <Box sx={{ flexGrow: 1, display: { xs: 'flex',sm:'none', md: 'none' } }}>
+                                <div className='Menu'>
+                                <Box sx={{ flexGrow: 1,justifyContent:'left', display: { xs: 'flex',sm:'none', md: 'none', flexDirection:'row-reverse'} }}>
                                     <IconButton
                                     size="large"
                                     aria-label="account of current user"
@@ -86,12 +87,14 @@ const Heading : React.FC<HeadingProps>= ({ themeMode, toggleTheme,})=>{
                                         >
                                         {pages.map((page) => (
                                             <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                                <Typography textAlign="center">{page}</Typography>
+                                                <Typography color={green} textAlign="center">{page}</Typography>
                                             </MenuItem>
                                         ))}
                                     </Menu>
                                 </Box>
-                                <Box sx={{ flexGrow: 1, display: { xs: 'none', sm:'flex', md: 'flex' } }}>
+                                </div>
+                                <div className='buttons'>
+                                <Box sx={{ flexGrow: 1,justifyContent:'right', display: { xs: 'none', sm:'flex', md: 'flex' } }}>
                                     {pages.map((page) => (
                                     <Button
                                         key={page}
@@ -102,7 +105,7 @@ const Heading : React.FC<HeadingProps>= ({ themeMode, toggleTheme,})=>{
                                     </Button>
                                     ))}
                                 </Box>
-                            </Toolbar>
+                                </div>
                         </div>
                             <div className='toggleButton'>
                                 <ThemeToggleButton themeMode={themeMode} toggleTheme={toggleTheme}  />

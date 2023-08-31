@@ -1,11 +1,25 @@
 .headingContainer{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end; /* Aligns content to the right */
     align-items: center; /* Centers content vertically */
     padding: 0 8px; /* Add some padding to create space */
+    flex-grow: 1;
 }
 
 .toggleButton{
     margin-left: 32px;    
 }
+
+.headingContainer .linkButtons{
+    display:flex;
+    flex-grow: 12;
+}
+
+.headingContainer .linkButtons .Menu{
+    display:flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: left;
+}
+
+
