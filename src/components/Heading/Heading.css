@@ -2,12 +2,14 @@
     display: flex;
     flex-direction: row;
     align-items: center; /* Centers content vertically */
-    padding: 0 8px; /* Add some padding to create space */
+    padding: 0px; /* Add some padding to create space */
     flex-grow: 1;
 }
 
 .toggleButton{
-    margin-left: 32px;    
+    margin-left: 32px;
+    display: flex;
+    align-items: flex-end;    
 }
 
 .headingContainer .linkButtons{
