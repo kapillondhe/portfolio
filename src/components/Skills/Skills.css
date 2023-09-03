@@ -1,0 +1,39 @@
+.skillsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    height: 75px;
+    width: 125px;
+}
+
+.skillTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+.iconButton{
+    appearance: none; /* Reset the button appearance to its initial state */
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    font: inherit; /* Inherit the font from the parent element */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    outline: none; /* Remove the default focus outline */
+}

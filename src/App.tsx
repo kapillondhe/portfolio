@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { ThemeProvider, CssBaseline, createTheme} from '@mui/material';
 import Heading from './components/Heading/Heading';
-import Contacts from './components/Contacts/Contact';
 import Body from './components/Body/Body';
+import Footer from './components/Footer/Footer';
 import './App.css'
 
 const primaryLightColor = '#4CAF50'; // Green
@@ -39,6 +39,9 @@ const App: React.FC = () => {
           </div>          
           <div className='appBody'>
             <Body/>
+          </div>
+          <div className='appFooter'>
+            <Footer/>
           </div>
         </div>
       </div>

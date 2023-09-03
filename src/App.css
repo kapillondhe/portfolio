@@ -1,8 +1,21 @@
 .appContainer{
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  flex-grow: 1;
 }
 
 .appBody{
   margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.appFooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex-grow: 1;
+  text-align: center;
+  bottom: 0;
+ 
 }

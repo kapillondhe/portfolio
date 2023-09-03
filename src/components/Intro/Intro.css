@@ -1,11 +1,14 @@
 .introContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     overflow: hidden;
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 1px; /* Adjust as needed */
     margin-top: 50px;
-
+    font-size: larger;
     .hello{
         padding-right: 20px;
     }
