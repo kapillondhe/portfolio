@@ -1,6 +1,6 @@
 const linkedIn_URL='https://www.linkedin.com/in/kapillondhe/';
 const github_URL='https://github.com/kapillondhe';
-const mail='kapillondhe25@gmail.com';
+const mail='kapil@kapillondhe.com';
 
 const handleGIT=(e)=>{
     e.preventDefault();

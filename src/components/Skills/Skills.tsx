@@ -31,7 +31,11 @@ const Skills =()=>{
             <SkillCard skillName='Jest' skillIcon='/skillIcon/jest.svg'/>
             <SkillCard skillName='HTML' skillIcon='/skillIcon/html5.svg'/>
             <SkillCard skillName='CSS' skillIcon='/skillIcon/css.svg'/>
+            <SkillCard skillName='My SQL' skillIcon='/skillIcon/mysql.svg'/>
+            <SkillCard skillName='Mongo DB' skillIcon='/skillIcon/mongodb.svg'/>
+            <SkillCard skillName='Babel' skillIcon='/skillIcon/babel.svg'/>
             <SkillCard skillName='Webpack' skillIcon='/skillIcon/webpack.svg'/>
+            <SkillCard skillName='C++' skillIcon='/skillIcon/cpp.svg'/>
             <SkillCard skillName='Selenium' skillIcon='/skillIcon/selenium.svg'/>
         </div>
         </div>
