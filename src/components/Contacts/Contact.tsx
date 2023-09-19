@@ -1,39 +1,34 @@
 import './Contacts.css'
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
-import {handleGIT, handleLI, handleEmail} from './contactController'
 
+const linkedIn_URL='https://www.linkedin.com/in/kapillondhe/';
+const github_URL='https://github.com/kapillondhe';
 
 
 const Contacts: React.FC =()=>{
     return(
         <div className='contactsContainer'>
-            <div className='contacts'>
-                <div className='github'>
+                <div className='contacts'>
                     <Tooltip title="GitHub Profile" sx={{}}>
-                        <Button color='inherit' onClick={handleGIT} >
-                            <GitHubIcon/>
-                        </Button>
+                        <a href={github_URL}   >
+                        <img className='ContactIcon' src='./skillIcon/github.svg' alt='GitHub'></img>
+                        </a>
                     </Tooltip>
                 </div>
-                <div className='linkedin'>
+                <div className='contacts'>
                     <Tooltip title="Linkedin Profile">
-                        <Button color='inherit' onClick={handleLI} >
-                            <LinkedInIcon/>
-                        </Button>
+                        <a href={linkedIn_URL} >
+                        <img className='ContactIcon' src='./utilIcons/linkedin.svg' alt='Linkedin'></img>
+                        </a>
                     </Tooltip>
                 </div>
-                <div className='email'>
+                <div className='contacts'>
                     <Tooltip title="Send Email">
-                        <Button color='inherit' onClick={handleEmail}>
-                            <EmailIcon/>
-                        </Button>
+                        <a href="mailto:kapillondhe25@gmail.com">
+                            <img className='ContactIcon' src='./utilIcons/mail.svg' alt='Email'></img>
+                        </a>
                     </Tooltip>
                 </div>
-            </div>
         </div>
     )
 }

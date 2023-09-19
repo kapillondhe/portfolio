@@ -1,9 +1,16 @@
 .contactsContainer{
-    display: grid;
+    display: flex;
     place-items: center;
 }
 
 .contacts{
     display: flex;
     flex-direction: row;
+    padding: 16px;
+    margin: 16px;
+}
+
+.ContactIcon{
+    height: 50px;
+    width: 50px;
 }

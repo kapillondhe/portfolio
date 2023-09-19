@@ -10,7 +10,7 @@ const Resume =()=>{
                 <Card sx={{display:'flex',flexDirection:'row', justifyContent:'center', width:'fit-content'}}>
                     <CardContent >
                         <a href='./Resume/Kapil_Resume.pdf' download='KapilLondhe_resume.pdf' title='Download Resume'> 
-                            <img className='ResumeIcon' src='./skillIcon/resume.svg'></img>
+                            <img className='ResumeIcon' src='./utilIcons/resume.svg'></img>
                         </a>
                     </CardContent>   
                 </Card> 

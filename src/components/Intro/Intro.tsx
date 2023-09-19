@@ -4,8 +4,7 @@ const Intro = ()=>{
     return(
         <div className='introContainer'>
             <h1>
-            <span className='hello'>Hello </span>
-            <span className="waving-emoji">👋</span>
+            <span className='hello'>Hello  !! </span>
             </h1>
             <div className='name'>
                 <h1>I am Kapil</h1>
