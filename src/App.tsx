@@ -3,6 +3,7 @@ import { ThemeProvider, CssBaseline, createTheme} from '@mui/material';
 import Heading from './components/Heading/Heading';
 import Body from './components/Body/Body';
 import Footer from './components/Footer/Footer';
+import Resume from './components/Resume/Resume';
 import './App.css'
 
 const primaryLightColor = '#4CAF50'; // Green

@@ -1,0 +1,13 @@
+.ResumeContainer{
+    text-align: center;
+}
+
+.ResumeIcon{
+    height: 50px;
+    width: 50px;
+}
+
+.ResumeCard{
+    display: flex;
+    justify-content: center;
+}
