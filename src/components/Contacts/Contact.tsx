@@ -10,14 +10,14 @@ const Contacts: React.FC =()=>{
         <div className='contactsContainer'>
                 <div className='contacts'>
                     <Tooltip title="GitHub Profile" sx={{}}>
-                        <a href={github_URL}   >
+                        <a href={github_URL} target='_blank'  rel="noreferrer" >
                         <img className='ContactIcon' src='./skillIcon/github.svg' alt='GitHub'></img>
                         </a>
                     </Tooltip>
                 </div>
                 <div className='contacts'>
                     <Tooltip title="Linkedin Profile">
-                        <a href={linkedIn_URL} >
+                        <a href={linkedIn_URL} target='_blank'  rel="noreferrer" >
                         <img className='ContactIcon' src='./utilIcons/linkedin.svg' alt='Linkedin'></img>
                         </a>
                     </Tooltip>
