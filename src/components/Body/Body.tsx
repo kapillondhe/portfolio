@@ -3,6 +3,7 @@ import About from "../About/About";
 import Intro from "../Intro/Intro";
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
+import Timeline from "../Timeline/Timeline";
 import Resume from "../Resume/Resume";
 
 const Body =()=>{
@@ -10,10 +11,10 @@ const Body =()=>{
         <div className="bodyContainer">
             <Intro/>
             <About/>
-            <ExperienceTimeline/>
             <Skills/>
             <Projects/>
             <Resume/>
+            <Timeline/>
         </div>
 
     )

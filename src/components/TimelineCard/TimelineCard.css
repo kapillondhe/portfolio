@@ -1,0 +1,29 @@
+.TimelineContainer{
+    font-size: small;
+}
+
+.eventTitle{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: small;
+    text-align: start;
+}
+
+.eventSecondTitle{
+    text-align: start;
+}
+
+.eventIcon{
+    height: 30px;
+    width: 30px;
+    padding: 4px;
+}
+
+.eventDate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+}

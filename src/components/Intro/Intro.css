@@ -4,9 +4,9 @@
     align-items: center;
     text-align: center;
     overflow: hidden;
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 1px; /* Adjust as needed */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 1px;
     margin-top: 50px;
     font-size: larger;
     .hello{
