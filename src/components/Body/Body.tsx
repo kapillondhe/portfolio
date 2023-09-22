@@ -1,10 +1,10 @@
-import ExperienceTimeline from "../Timeline/Timeline";
 import About from "../About/About";
 import Intro from "../Intro/Intro";
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
-import Timeline from "../Timeline/Timeline";
+import Education from "../Education/Education";
 import Resume from "../Resume/Resume";
+import Experience from "../Experience/Experience";
 
 const Body =()=>{
     return(
@@ -13,8 +13,9 @@ const Body =()=>{
             <About/>
             <Skills/>
             <Projects/>
+            <Experience/>
+            <Education/>
             <Resume/>
-            <Timeline/>
         </div>
 
     )

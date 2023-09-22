@@ -1,30 +1,7 @@
-import './Timeline.css'
+import './Experience.css'
 import TimelineCard from '../TimelineCard/TimelineCard';
 
-const TimelineDetails = [
-    {   
-        title:'Birth',
-        date: '25 Nov 1999',
-        place:'Gadchiroli, Maharashtra, India',
-    },
-    {   
-        title:'SSC',
-        date: '2015',
-        place:'Gadchiroli, Maharashtra, India',
-        secondTitle:'Platinum Jubilee High School',
-    },
-    {   
-        title:'HSC',
-        date: '2017',
-        place:'Gadchiroli, Maharashtra, India',
-        secondTitle:'Shivaji Jr. Science college',
-    },
-    {   
-        title:'B.Tech (Electronics & Telecommunication)',
-        date: ' 2017 - 2021',
-        place:'Nanded, Maharashtra, India',
-        secondTitle:'Shri Guru Gobind Singhji Institute of Engineering & Technology',
-    },
+const ExperienceDetails = [
     {   
         title:'Software Engineer',
         date: 'Sept 2021 - Present',
@@ -41,15 +18,15 @@ const TimelineDetails = [
                     'Collaborated closely with cross-functional teams, including designers, product managers, and quality assurance, to ensure seamless integration and delivery of high-quality software product.*'+
                     'Domain: Product Lifecycle Management.*'+
                     'Skills: JavaScript · React.js · Node.js · Webpack · Babel.js · Web Applications · Front-End Development · C++ · Jest · Agile Methodologies'
-    },
+    }
 ]
 
-const Timeline :React.FC=()=>{
+const Experience :React.FC=()=>{
     return(
         <div className="timelineContainer">
-            <h1>Timeline</h1>
+            <h1>Experience</h1>
             {
-                TimelineDetails.map((event)=>{
+                ExperienceDetails.map((event)=>{
                     return(<>
                     <TimelineCard event={event}/>
                     </>)
@@ -59,4 +36,4 @@ const Timeline :React.FC=()=>{
     )
 }
 
-export default Timeline;
+export default Experience;
