@@ -12,9 +12,9 @@ const Body =()=>{
             <Intro/>
             <About/>
             <Skills/>
-            <Projects/>
             <Experience/>
             <Education/>
+            <Projects/>
             <Resume/>
         </div>
 
